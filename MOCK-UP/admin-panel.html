@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: rgb(244, 236, 236);
+  color: black; 
+}
+
+.sidebar {
+  float: left;
+  width: 200px;
+  background-color: #e0e0e0; 
+  padding: 20px;
+  color: black; 
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px 10px;
+}
+
+.sidebar i {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.main-content {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+.header-text {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+.admin-circle {
+  background-color: #333; 
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px; /
+}
+
+
+.admin-text {
+  display: block; 
+  text-align: left; 
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <h1>LearnHub</h1>
+  <ul>
+    <li>
+      <div class="admin-circle"><i class="fa fa-user" style="color: white;"></i></div> </li>
+    <li class="admin-text"><a href="#">Admin</a></li>  <li><a href="#">Data</a>
+      <ul>
+        <li><i class="fa fa-user-circle"></i> <a href="#">Users</a></li>
+        <li><i class="fa fa-file-invoice"></i> <a href="#">Invoices</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Content</a>
+      <ul>
+        <li><i class="fa fa-plus-square"></i> <a href="./course-page1.html">Create Course</a></li>
+        <li><i class="fa fa-play-circle"></i> <a href="#">Live Course</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Customization</a>
+      <ul>
+        <li><i class="fa fa-image"></i> <a href="#">Hero</a></li>
+        <li><i class="fa fa-question-circle"></i> <a href="./FAQ.html">FAQ</a></li>
+        <li><i class="fa fa-tags"></i> <a href="#">Categories</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Controllers</a>
+      <ul>
+        <li><i class="fa fa-users"></i> <a href="#">Manage Teams</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Analytics</a>
+      <ul>
+        <li><i class="fa fa-chart-bar"></i> <a href="#">Course Analytics</a></li>
+      
+      </ul>
+    </li>
+  </ul>
+</div>
+
+</body>
+</html>

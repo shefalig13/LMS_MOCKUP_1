@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        
+        .faq-list {
+            list-style: none;
+            padding: 0;
+            color:white;
+        }
+        
+        .faq-list li {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+        
+        .faq-list li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .answer {
+            display: none;
+            margin-top: 10px;
+        }
+        
+        .answer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <ul class="faq-list">
+            <li>
+                <div class="question">What kind of courses are provided?</div>
+                <div class="answer">
+                    <p>LearnHub is a platform that tries to provide courses on various different subjects. It provides well versed courses and learning material also one-on-one interaction and live sessions can also be organized with there respective teachers.</p>
+                </div>
+            </li>
+            <li>
+                <div class="question">Will I recieve a certificate for each course?</div>
+                <div class="answer">
+                    <p>Yes LearnHub provides certificate as soon as the student completes the course.</p>
+                </div>
+            </li>
+            <li>
+                <div class="question">Will I be recieving badges after completion of any assignment?</div>
+                <div class="answer">
+                    <p>Yes !! to motivate so that they complete their assignments enthusiastically Learnhub rewards badges to the students on completing assignments on time .</p>
+                </div>
+            </li>
+            <li>
+                <div class="question">Will I get a chance to participate in online competitions ?</div>
+                <div class="answer">
+                    <p>Yes!! to keep students motivated and increase the competitive spirit within them so that they can achieve greater heights LearnHub keep on organizing various competitons and upon winning students are awarded within goodies, bags and t-shirts</p>
+                </div>
+            </li>
+            <!-- Add more FAQ items as needed -->
+        </ul>
+    </div>
+
+    <script>
+        // JavaScript for FAQ functionality (optional)
+        const questions = document.querySelectorAll('.question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('active');
+
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
